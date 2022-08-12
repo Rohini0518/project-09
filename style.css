@@ -1,0 +1,304 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin:0;
+
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+/* --------header section--------- */
+
+header{
+  background-color: #3400ff;
+color:white;
+padding:5px;
+height:500px;
+}
+
+
+nav{
+  float:right;
+  margin-right:40px;
+  margin-top:15px;
+  text-align: center;
+}
+.nav-item{
+  padding-right:15px;
+  cursor: pointer;
+
+}
+
+.logo{
+margin:20px;
+cursor: pointer;
+}
+
+.nav-item-active{
+  padding:8px 20px;
+  color:#5a31fc;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-right:10px;
+  cursor: pointer;
+}
+
+.header-text{
+  float:left;
+  margin-top:50px;
+  margin-left:60px;
+  }
+
+.header-image{
+  float: right;
+  margin-right:-4.4px;
+
+}
+ 
+ 
+/* ----- Companies  section----- */
+
+.companies{
+margin-top:20px;
+margin-left:60px;
+}
+
+.company-items{
+text-decoration: none;
+margin-left:30px;
+cursor: pointer;
+font-weight: 800;
+}
+
+
+/* ----------API cards section-------- */
+
+.api-heading{
+  margin-left:80px;
+  margin-top:100px;
+}
+.cards{
+display:flex;
+margin-left:80px;
+margin-top:20px;
+gap:20px;
+padding:5px;
+
+}
+
+.card{
+  padding:12px;
+  height:200px;
+  width:15%;
+  /* margin-right:30px; */
+
+}
+.card-active{
+  background-color:#ffffff;
+  padding:8px;
+  box-shadow:1px 3px 45px rgb(150, 146, 146);
+  border-radius:10px;
+ 
+}
+
+.card-head-active{
+  color:#4617fe;
+}
+
+.cards::after{
+content:">";
+font-size:30px;
+border:solid;
+width:38px;
+height:35px; 
+margin-top:90px;
+text-align: center;
+border-radius: 50px;
+background-color:#4617fe;
+color:#ffffff;
+padding-bottom:5px;
+font-weight: 100;
+}
+
+
+
+
+/* -----------blog article section----------- */
+
+.blog-heading{
+margin-left:90px;
+margin-top:30px;
+margin-bottom:20px;
+}
+
+.blog-cards{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+.blog-card{
+display:flex;
+gap:30px;
+position:relative;
+
+}
+
+
+.blog-bottom{
+position:absolute;
+top:215px;
+left:310px;
+
+}
+.blog-author{
+  position:absolute;
+  top:110px;
+left:185px;
+
+}
+
+
+
+
+/* ------- FAQ SECTION ------ */
+
+
+
+.faq-section{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e9edff;
+  height:420px;
+margin-top:30px;
+}
+
+.faq-content{
+margin-left:90px;
+line-height:25px;
+}
+
+.faq-content h2{
+
+  font-size:2.5rem;
+  font-weight: 800;
+  line-height:45px;
+
+}
+
+.faq-content h2 + h4{
+font-weight: 550;
+font-size: 12px;
+}
+
+.faq-content button{
+  background-color:#5a31fc;
+  color:#ffffff;
+  padding:8px 25px;
+  border:none;
+  margin-bottom: 15px;
+  margin-top:20px;
+}
+
+
+.faq-image img{
+width:800px;
+margin-top: 0px;
+}
+
+/* ----------download section------- */
+
+.download-section{
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin:60px;
+}
+
+.download-content{
+  font-weight: 900;
+}
+.download-content span{
+  color:#5a31fc;
+  font-weight: 400;
+}
+
+.download-email{
+  background-color: #e9edff;
+padding-left: 20px;
+border-radius:30px;
+width:500px;
+}
+
+.download-email input{
+border:none;
+font-size:10px;
+padding:10px 50px 10px 5px;
+background-color: transparent;
+font-weight: 800;
+border-radius:30px;
+
+}
+
+.download-email button{
+  padding:10px 25px;
+  background-color: #4617fe;
+  color:#ffffff;
+  border:none;
+  border-radius:30px;
+float:right;
+}
+
+
+/* -------footer section------ */
+
+.footer-section{
+  background-color: #4617fe;
+  display:flex;
+  justify-content: space-between;
+  color:#ffffff;
+  align-items:center;
+  padding:20px 30px;
+}
+
+.footer-logo{
+margin:5px 40px;
+
+}
+
+.list{
+  display:flex;
+list-style:none;
+}
+
+.list-items{
+padding:5px 3px;
+font-size:10px;
+}
+
+
+/* -----footer right------- */
+
+.footer-rigt{
+text-align: center;
+
+}
+
+.footer-logos{
+  width:25px;
+  padding-right:4px;
+}
+
+.logos-list{
+  display:flex;
+  list-style: none;
+  font-size: 10px;
+  margin-right:70px;
+
+}
+
