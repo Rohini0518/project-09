@@ -33,7 +33,9 @@ nav{
   cursor: pointer;
 
 }
-
+.toggle-btn{
+  display:none;
+}
 .logo{
 margin:20px;
 cursor: pointer;
@@ -52,6 +54,7 @@ cursor: pointer;
   float:left;
   margin-top:50px;
   margin-left:60px;
+  font-size: 1.7rem;
   }
 
 .header-image{
@@ -90,13 +93,10 @@ gap:20px;
 padding:5px;
 
 }
-
 .card{
   padding:12px;
   height:200px;
   width:15%;
-  /* margin-right:30px; */
-
 }
 .card-active{
   background-color:#ffffff;
@@ -302,3 +302,177 @@ text-align: center;
 
 }
 
+/* ---------------------media queries------------------------------------------- */
+
+@media screen and (max-width: 500px) {  
+
+
+header{
+height:400px;
+}
+
+nav{
+  display:none;
+}
+
+.header-text{
+  float:left;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  margin-left:30px;
+
+  }
+  .toggle-btn{
+    float:right;
+    display:flex;
+    width:30px;
+    margin:20px;
+  }
+  .header-image{
+    width:200px;
+    margin-top:30px;
+  }
+
+/* ----companies section-------- */
+
+.companies{
+  margin-top:20px;
+  margin-left:10px;
+  }
+
+  /* ----------API cards section-------- */
+
+
+  
+    .api-heading{
+      margin-left:40px;
+      margin-top:50px;
+    }
+    .cards{
+      display:flex;
+      flex-wrap: wrap;
+      margin-left:20px;
+      margin-top:20px;
+      }
+      .card{
+        padding:12px;
+        height:200px;
+        width:35%;
+      }
+      .cards::after{
+        display:none;
+      }
+
+    .blog-heading{
+      margin-left:40px;
+      margin-top:20px;
+      margin-bottom:20px;
+      }
+
+      .blog-cards{
+        display:flex;
+        flex-wrap: wrap;
+        gap:30px;
+      }
+
+
+      .faq-section{
+        display:flex;
+        flex-direction: column;
+        height:520px;
+      }
+
+      .faq-content{
+        margin:30px 20px 30px ;
+        }
+
+      .faq-content h2{
+        margin-bottom: 20px;
+        font-size:1.5rem;
+        line-height:25px;
+      }
+
+      .faq-image img{
+        width:450px;
+        margin-top: 0px;
+        border-radius: 30px;
+        }
+       .faq-content h4{
+        display:none;
+
+       }
+
+
+
+
+}
+
+
+@media screen and (max-width: 900px) { 
+
+header{
+height:400px;
+}
+
+nav{
+ display:none; 
+}
+.toggle-btn{
+  float:right;
+  display:flex;
+  width:30px;
+  cursor: pointer;
+  margin:20px;
+}
+.header-text{
+  margin-top:20px;
+  margin-left:30px;
+  font-size: 1rem;
+  }
+
+  .header-image{
+    float: right;
+    margin-right:-4.4px;
+    width:300px;
+  
+  }
+
+  .cards{
+    margin-left:20px;
+    flex-wrap: wrap;
+    }
+
+    .api-heading{
+      margin-left:30px;
+      margin-top:50px;
+    }
+    .card{ 
+      width:25%;
+     background-color: #ffffff;
+     border-radius: 20px;
+    }
+    .blog-heading{
+      margin-left:50px;
+      }
+
+      .blog-cards{
+        display:flex;
+        flex-wrap: wrap;
+        gap:30px;
+      }
+
+      .faq-section{
+        display:flex;
+        flex-direction: row-reverse;
+        height:300px;
+        gap:20px;
+      }
+      .faq-content{
+        margin:30px 20px 0px ;
+        }
+
+      .faq-image img{
+        width:450px;
+        }
+
+}
